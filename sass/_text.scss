@@ -3,20 +3,19 @@
 	flex-direction: column;
 
 	color: $dark-grey;
-	padding: 3rem 4.5rem;
-	justify-content: space-between;
+	padding: 5rem 4rem;
 }
 
 .heading {
 	font-weight: $font-bolder;
-	font-size: 2.4rem;
-	width: 80%;
+	font-size: 2.8rem;
+	margin-bottom: 2rem;
 }
 
 .content {
 	font-weight: $font-bold;
-	font-size: 1.6rem;
-	width: 90%;
+	font-size: 1.8rem;
+	margin-bottom: 4.5rem;
 }
 
 .sub {
@@ -28,24 +27,23 @@
 
 .profile {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	width: 45%;
 }
 
 .avatar {
-	width: 5rem;
-	height: 5rem;
+	width: 7rem;
+	height: 7rem;
 	border-radius: 50%;
+	margin-right: 2rem;
 }
 
 .name {
 	font-weight: $font-bolder;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
 
 .date {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 
 .share {
@@ -53,8 +51,8 @@
 	justify-content: center;
 	align-items: center;
 	background-color: $grey-blue-light;
-	width: 40px;
-	height: 40px;
+	width: 45px;
+	height: 45px;
 	border-radius: 50%;
 }
 
