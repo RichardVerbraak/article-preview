@@ -1,0 +1,54 @@
+.share_popup {
+	position: absolute;
+	background-color: $dark-grey;
+	top: -200%;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 4rem;
+	border-radius: 10px;
+
+	width: 30rem;
+
+	color: #fff;
+
+	&--text {
+		color: $grey-blue;
+		text-transform: uppercase;
+		letter-spacing: 0.7rem;
+		font-size: 1.5rem;
+	}
+
+	&--icon {
+		display: block;
+		line-height: 0;
+		width: 22px;
+		height: 22px;
+
+		opacity: 70%;
+		transition: all 0.2s;
+
+		&:hover {
+			opacity: 100%;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: -28%;
+		left: 46%;
+		width: 0;
+		height: 0;
+		border-left: 14px solid transparent;
+		border-right: 14px solid transparent;
+
+		border-top: 18px solid $dark-grey;
+	}
+}
+
+.show {
+	position: relative;
+	transition: all 0.2s;
+}
