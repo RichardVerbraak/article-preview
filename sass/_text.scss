@@ -1,0 +1,18 @@
+.text {
+	display: flex;
+	flex-direction: column;
+
+	color: $dark-grey;
+}
+
+.heading {
+	font-weight: $font-bolder;
+}
+
+.content {
+	font-weight: $font-bold;
+}
+
+.name {
+	font-weight: $font-bolder;
+}
