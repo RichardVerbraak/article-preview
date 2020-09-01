@@ -56,7 +56,11 @@
 	height: 45px;
 	border-radius: 50%;
 
-	transition: all 0.2s;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $grey-blue;
+	}
 }
 
 .share_icon {
