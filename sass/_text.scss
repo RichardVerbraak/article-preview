@@ -3,16 +3,63 @@
 	flex-direction: column;
 
 	color: $dark-grey;
+	padding: 3rem 4.5rem;
+	justify-content: space-between;
 }
 
 .heading {
 	font-weight: $font-bolder;
+	font-size: 2.4rem;
+	width: 80%;
 }
 
 .content {
 	font-weight: $font-bold;
+	font-size: 1.6rem;
+	width: 90%;
+}
+
+.sub {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+}
+
+.profile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 45%;
+}
+
+.avatar {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
 }
 
 .name {
 	font-weight: $font-bolder;
+	font-size: 1.5rem;
+}
+
+.date {
+	font-size: 1.4rem;
+}
+
+.share {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $grey-blue-light;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.share_icon {
+	display: block;
+	width: 18px;
+	height: 18px;
 }
