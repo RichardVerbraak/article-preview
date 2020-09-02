@@ -33,12 +33,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 55px 61px -55px rgba(0, 0, 0, 0.34);
-  box-shadow: 0px 55px 61px -55px rgba(0, 0, 0, 0.34);
   background-color: #fff;
   height: 42rem;
   width: 55%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 55px 61px -55px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 55px 61px -55px rgba(0, 0, 0, 0.34);
 }
 
 .image {
@@ -64,14 +64,14 @@ body {
   padding: 5rem 4rem;
 }
 
-.heading {
+.text__heading {
   font-weight: 700;
   font-size: 2.8rem;
   margin-bottom: 3rem;
   width: 90%;
 }
 
-.content {
+.text__sub {
   font-weight: 500;
   font-size: 1.8rem;
   margin-bottom: 4rem;
@@ -99,19 +99,19 @@ body {
           align-items: center;
 }
 
-.avatar {
+.profile__avatar {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
   margin-right: 2rem;
 }
 
-.name {
+.profile__info--name {
   font-weight: 700;
   font-size: 1.7rem;
 }
 
-.date {
+.profile__info--date {
   font-size: 1.6rem;
 }
 
@@ -136,13 +136,13 @@ body {
   background-color: #9eafc2;
 }
 
-.share_icon {
+.share__icon {
   display: block;
   width: 18px;
   height: 18px;
 }
 
-.share_popup {
+.share__popup {
   position: absolute;
   background-color: #48556a;
   top: -200%;
@@ -161,14 +161,14 @@ body {
   color: #fff;
 }
 
-.share_popup--text {
+.share__popup--text {
   color: #9eafc2;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
   font-size: 1.5rem;
 }
 
-.share_popup--icon {
+.share__popup--icon {
   display: block;
   line-height: 0;
   width: 22px;
@@ -176,11 +176,11 @@ body {
   opacity: 70%;
 }
 
-.share_popup--icon:hover {
+.share__popup--icon:hover {
   opacity: 100%;
 }
 
-.share_popup::after {
+.share__popup::after {
   position: absolute;
   content: '';
   bottom: -28%;

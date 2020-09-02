@@ -1,52 +1,76 @@
-.share_popup {
-	position: absolute;
-	background-color: $dark-grey;
-	top: -200%;
-
+.share {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	justify-content: space-between;
-	padding: 2rem 4rem;
-	border-radius: 10px;
+	background-color: $grey-blue-light;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
 
-	width: 30rem;
+	cursor: pointer;
 
-	color: #fff;
-
-	&--text {
-		color: $grey-blue;
-		text-transform: uppercase;
-		letter-spacing: 0.7rem;
-		font-size: 1.5rem;
+	&:hover {
+		background-color: $grey-blue;
 	}
 
-	&--icon {
+	&__icon {
 		display: block;
-		line-height: 0;
-		width: 22px;
-		height: 22px;
-
-		opacity: 70%;
-
-		&:hover {
-			opacity: 100%;
-		}
+		width: 18px;
+		height: 18px;
 	}
 
-	&::after {
+	&__popup {
 		position: absolute;
-		content: '';
-		bottom: -28%;
-		left: 46%;
-		width: 0;
-		height: 0;
-		border-left: 14px solid transparent;
-		border-right: 14px solid transparent;
+		background-color: $dark-grey;
+		top: -200%;
 
-		border-top: 18px solid $dark-grey;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2rem 4rem;
+		border-radius: 10px;
+
+		width: 30rem;
+
+		color: #fff;
+
+		&--text {
+			color: $grey-blue;
+			text-transform: uppercase;
+			letter-spacing: 0.7rem;
+			font-size: 1.5rem;
+		}
+
+		&--icon {
+			display: block;
+			line-height: 0;
+			width: 22px;
+			height: 22px;
+
+			opacity: 70%;
+
+			&:hover {
+				opacity: 100%;
+			}
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: -28%;
+			left: 46%;
+			width: 0;
+			height: 0;
+
+			// Triangle
+			border-left: 14px solid transparent;
+			border-right: 14px solid transparent;
+			border-top: 18px solid $dark-grey;
+		}
 	}
 }
 
+// If added, popup will show
 .show {
 	position: relative;
 }
